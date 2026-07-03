@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <nav>
+          <h2>om patil</h2>
+         <ul>
+            <li> <a href="#home">home</a></li>
+            <li> <a href="#about">about</a></li>
+            <li><a href="#project">project</a></li>
+            <li><a href="#contact">contact</a></li>
+            <li><a href="#menu item">menu item</a></li>
+         </ul>
+       </nav>
+        <div class="hero" id="home"><h1>hi, i'am om patil</h1>
+         <p>i am learning web development</p>
+         <button>hire me </button>
+         <button>download cv</button>
+        </div>
+        <section class="about" id="about">
+          <p>hello! my name is om patil. i am learnig HTML,CSS and javascript.
+            my goal is to become a full stack web developer.
+          </p>
+        </section>
+        <section class="project" id="project">
+        <h2>my projects</h2>
+        <div class="project">
+          <h3>protfolio website</h3>
+          <p> a personal portfolio created using HTML,CSS and javascript. </p>
+        </div>
+        <div class="project-card"> 
+          <h3>calculator</h3>
+          <p>a simple calculator built using javascript.</p>
+        </div>
+        <div class="project-card">
+          <h3>To-Do list </h3>
+          <p>a task management app using javascript</p>
+        </div>
+        </section>
+        <section class="skills" id="skills">
+          <section class="contact">
+            <h2>contact me </h2>
+            <input type="text" placeholder="enter your name">
+            <input type="email" placeholder="enter your email">
+            <textarea placeholder="your message"></textarea>
+            <button>send message</button>
+          </section>
+     <div class="container" id="contact">
+     <div class="card">
+       <img src="images/html.png" alt="html Logo" width="150">
+       <h2>HTML</h2>
+       <p class="definition">hyper text matkup languge</p>
+       <p>Structure Of website</p>
+       <button onclick="showHTML()">Learn More</button>
+    </div>
+    <div class="card">
+       <img src="images/css.png" alt="css logo" width="150">
+       <h2>CSS</h2>
+        <p class="definition">cascading style sheets</p>
+       <p>dedign & styling</p>
+       <button onclick="showCSS()">learn more</button>
+    </div>
+    <div class="card">
+      <img src="images/js.png" alt="javascript logo" width="150">
+      <h2>javascript</h2>
+       <p class="definition">programming language for tha web </p>
+      <p>website interactivity</p>
+      <button onclick="showJS()">learn more</button>
+    </div>
+    
+    </div>
+    <div id="htmlinfo"style="display: none;margin: 30px; padding: 20px; background: white; border-radius: 10px;">
+      <span class="close" onclick="hideHTML()">&times;</span>
+      <h1>HTML</h1>
+      <p><b>HTML</b> (hyper text matkup language) is the standard
+      language used to create the structure of web pages.</p>
+      <h3> Uses of HTML</h3>
+      <ul>
+        <li>create headings and paragraphs</li>
+        <li>add images</li>
+        <li>crete forms and tables</li>
+        <li>build tha structure of websites</li>
+      </ul>
+    </div>
+     <div id="cssinfo"style="display: none; margin:30px; padding:20px; background:white; border-radius:10px;">
+      <span class="close" onclick="hideCSS()">&times;</span>
+      <h1>CSS</h1>
+    <p><b>CSS</b> (Cascading Style Sheets) is used to style HTML pages.</p>
+    <h3>Uses of CSS</h3>
+    <ul>
+        <li>Change colors</li>
+        <li>Change fonts</li>
+        <li>Create layouts</li>
+        <li>Add animations</li>
+        <li>Make websites responsive</li>
+    </ul>
+</div>
+ <div id="jsinfo"style="display: none;margin: 30px; padding: 20px; background: white; border-radius: 10px;">
+  <span class="close" onclick="hideJS()">&times;</span>
+     <h1>javascript</h1>
+      <p><b>javascript</b>is a programming language used to meke website interactive.</p>
+      <h3> Uses of javascript</h3>
+      <ul>
+        <li>create  interactive websites</li>
+        <li>validate forms</li>
+        <li>crete animations </li>
+        <li>handle button clicks </li>
+        <li>build dynamic web applications</li>
+      </ul>
+    </div>
+      <script>
+      function showHTML(){
+        document .getElementById("htmlinfo").style.display="block";
+      }
+      function hideHTML(){
+        document.getElementById("htmlinfo").style.display="none";
+      }
+       function showCSS(){
+        document.getElementById("cssinfo").style.display="block";
+      }
+      function hideCSS(){
+       document.getElementById("cssinfo").style.display="none";
+      }
+      function showJS(){
+        document.getElementById("jsinfo").style.display="block";
+      }
+      function hideJS(){
+       document.getElementById("jsinfo").style.display="none";
+      }
+  </script>
+        </section>
+        <div id="#overlay"></div>
+        <footer>
+          <p>&copy; 2025 Om Patil | All Rights Reserved</p>
+        </footer>
+</body>
+</html>
